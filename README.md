@@ -2,9 +2,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/NeuralNode-Engine-blue?style=for-the-badge&logo=rocket" alt="NeuralNode Engine">
+  <img src="https://img.shields.io/badge/Data%20and%20Link%20Checks-passing-brightgreen?style=for-the-badge&logo=githubactions" alt="Passing">
   <img src="https://img.shields.io/badge/Pure%20Network-Zero%20AFF-emerald?style=for-the-badge&logo=shield" alt="Zero AFF">
-  <img src="https://img.shields.io/badge/Update-Daily%20Auto-brightgreen?style=for-the-badge&logo=githubactions" alt="Update Daily">
   <img src="https://img.shields.io/badge/Protocols-Hysteria2%20%7C%20Sing--box%20%7C%20Clash-violet?style=for-the-badge&logo=cloudflare" alt="Protocols">
+  <img src="https://img.shields.io/badge/PRs-welcome-brightgreen?style=for-the-badge" alt="PRs Welcome">
   <img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge" alt="License">
 </p>
 
