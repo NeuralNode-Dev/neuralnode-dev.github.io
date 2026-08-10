@@ -1,0 +1,48 @@
+name: NeuralNode Auto Node Engine
+
+on:
+  schedule:
+    # 北京时间每天早上 8 点运行 (UTC 01:00)
+    - cron: '0 1 * * *'
+  workflow_dispatch: # 允许在 GitHub 控制台手动一键运行
+
+jobs:
+  update-nodes:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run NeuralNode Update Engine
+        run: |
+          python scripts/update_links.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "NeuralNode-Dev[bot]"
+          git config --global user.email "NeuralNode-Dev[bot]@users.noreply.github.com"
+          
+          if [ -n "$(git status --porcelain)" ]; then
+            git add README.md docs/ SECURITY.md links/
+            git -c commit.gpgsign=false commit -m "🚀 auto(node-engine): update verified proxy nodes and docs [$(date +'%Y-%m-%d')]"
+            git push
+            echo "Changes pushed successfully."
+          else
+
+
+            echo "No changes detected."
+          fi
