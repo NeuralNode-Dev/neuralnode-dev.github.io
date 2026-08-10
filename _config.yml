@@ -1,0 +1,10 @@
+# NeuralNode-Dev GitHub Pages SEO Configuration
+title: "免费机场/公益节点/梯子/VPN推荐合集 (Clash/V2ray/SSR/Sing-box) - NeuralNode"
+description: "NeuralNode-Dev 官方精选 | 免费机场推荐、公益节点订阅、VPN梯子加速器。每日自动测速并优选 Clash Verge, v2rayN, Shadowrocket 小火箭, Sing-box 订阅链接，无返利、无套路、防跑路。"
+author: NeuralNode-Dev
+keywords: "免费机场, 免费VPN, 节点订阅, Clash节点, V2ray节点, 梯子推荐, 翻墙软件, 科学上网, 免费节点, Hysteria2, Sing-box, Shadowrocket, 小火箭订阅, 公益机场, 白嫖机场, 免费梯子, 云猫网络"
+
+# Jekyll settings
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
